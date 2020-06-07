@@ -1,0 +1,82 @@
+h1,h2,h3,p{
+  margin: 0px;
+}
+
+div{
+  padding: 5px;
+  /* border: black solid 1px; */
+}
+.allpage-wrap{
+  display: grid;
+  grid-template-columns: 15em auto;
+  column-gap: 1em;
+  font-family: 'Raleway', sans-serif;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+.table-wrap{
+  grid-row: 1 / 5;
+  grid-column: 2;
+}
+.control-wrap{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+  grid-auto-rows: min(100px,auto);
+  width: 15em;
+}
+.control-wrap > div{
+  background: #ddd;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  padding: 8px 5px;
+}
+.control-wrap > div:first-child{
+  background: white;
+}
+
+#col-input, #row-input{
+  width: 30px;
+}
+table{
+  border-collapse: collapse;
+}
+table, th, td{
+  border: 1px solid black;
+  padding: 5px;
+  /*for unselectable text*/
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+th {
+  background-color: rgb(201, 201, 201);
+  font-size: 18px;
+}
+.rhead{
+  width: 20px;
+}
+.chead {
+  word-wrap: break-word;
+}
+.cell{
+  width: 20px;
+  height: 20px;
+}
+.cell.filled{
+  background-color: black;
+  
+}
+#footer-text{
+  font-size: 14px;
+}

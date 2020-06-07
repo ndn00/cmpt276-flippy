@@ -1,0 +1,72 @@
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>html lmao</title>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+	<link id="theme" rel="stylesheet" type="text/css" href="/stylesheets/game.css">
+</head>
+
+<body>
+	<main>
+		<div class="allpage-wrap">
+			<div class="control-wrap">
+				<div class="title-wrap">
+					<div>
+						<h1>Flippy</h1>
+					</div>
+					<div style="align-self: end; justify-self: end;">
+						<label class="switch">
+							<input type="checkbox" onclick="handle_toggle()">
+							<span class="slider round"></span>
+						</label>
+					</div>
+				</div>
+				<div id="left" class="">
+					<div class="">
+						<h2>Controls</h2>
+					</div>
+					<div>
+						<button id="start" onclick="handle_start()">Start Game</button>
+					</div>
+					<div>
+						<h3>Time Elapsed:</h3>
+						<h3 id="timer">0m 0s</h3>
+					</div>
+					<div id="below" class="">
+						<button id="reset">Reset</button>
+						<button id="solution">Forfeit (show solution)</button>
+					</div>
+				</div>
+				<div id="right">
+					<div class="">
+						<h2>Custom Board</h2>
+					</div>
+					<div class="">
+						<label for="row-input">Custom Height:</label>
+						<input type="text" id="row-input" value="22">
+					</div>
+					<div class="">
+						<label for="col-input">Custom Width:</label>
+						<input type="text" id="col-input" value="45">
+					</div>
+					<div>
+						<button id="new-button" onclick="handle_form()">New Board</button>
+					</div>
+				</div>
+			</div>
+			<div class="table-wrap">
+				<table id="tb">
+				</table>
+			</div>
+			<div>
+				<p id="footer-text">
+					Created by Duy Ngoc Nguyen (Adrian) for CMPT276 (Summer 2020 - Bobby Chan) Assn1
+				</p>
+			</div>
+		</div>
+	</main>
+	<script src="/scripts/game.js"></script>
+</body>
+
+</html>
